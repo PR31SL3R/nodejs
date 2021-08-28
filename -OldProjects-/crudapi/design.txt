@@ -1,0 +1,28 @@
+// get
+// post
+// patch/put
+// delete
+
+//what is a collection in a relateable database - is a table
+
+
+GET
+/plants  //get all plants (plants is the table)
+/plants/id //pathvariable
+
+
+POST 
+/plants //create a new plant entry (collection name)
+
+//patch does not upadate the entire id
+
+PATCH
+/plants/id 
+
+
+
+DELETE 
+/plants/id
+
+
+create a server that implements get for plants
