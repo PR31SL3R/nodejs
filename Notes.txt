@@ -1,0 +1,31 @@
+ 31/8
+
+NodeJS er et javascript env til at afvikle JS serverside
+NodeJS afvikles i runtime V8
+før kunne JS kun afvikles i en browser
+
+liveshare extension er et værktøj til livecolab af kode
+-----------------------------------------------
+Github Kommandoer
+
+[Learn more about node](www.nodejs.org):
+**Bold**:
+
+*Cursive*:
+
+git clone 
+
+git add . 
+
+git commit -m "message" 
+
+git push 
+
+git pull
+----------------------------------------
+to run fil node [filename.js]
+
+"," er at foretrække fremfor "+"
+
+//Concatenation "," = " +"
+// vi vil gerne undgå type interference som kommer med plus
