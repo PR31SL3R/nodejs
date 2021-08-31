@@ -1,25 +1,9 @@
-let i = 1;
+// 31/8
+
+//NodeJS er et javascript env til at afvikle JS serverside
+//NodeJS afvikles i runtime V8
+//før kunne JS kun afvikles i en browser
+
+//liveshare extension er et værktøj til livecolab af kode
 
 
-console.log("test");
-console.log("test");
-console.log("test");
-console.log("test");
-console.log("test");
-console.log("test");
-
-
-
-
-console.log("this is another test")
-
-
-
-
-console.log("GIT")
-
-console.log("123456789")
-
-console.log("this is a test")
-
-//will this work
