@@ -1,0 +1,7 @@
+{
+    "toes": 8,
+    "key":"value",
+    "isMale":false,
+    "friends":["Joe", "Ali", "Svend"],
+    "rider":{"name":"Anders"}
+}
