@@ -56,5 +56,5 @@ const fact = "You are learning javascript!";
 
 // capitalize the J in Javascript
 
-console.log(fact.toUpperCase());
+console.log(fact[17].toUpperCase());
 // --------------------------------------
