@@ -15,7 +15,7 @@ console.log(myObj.message);
 
 // Create an object that has your name and age. 
 
-const myObject = {"name": 23,"age": 30}
+const myObject = {name: 23,age: 30}
 
 
 // --------------------------------------
@@ -25,7 +25,7 @@ const stackOverflow = {};
 
 // make a rule called isAllowed and let the value be true
 
-myObject.isAllowed = true;
+stackOverflow.isAllowed = true;
 
 // --------------------------------------
 // Exercise 4 - Remove a property 

@@ -16,7 +16,7 @@ const friends = [];
 
 // What a lonely array. Add at least 3 friend objects to it.  
 
-friends.push({"name":"Bob","age":25},{"name":"Joe","age":30},{"name":"John","age":35})
+friends.push({name:"Bob",age:25},{name:"Joe",age:30},{name:"John",age:35})
 
 console.log(friends);
 
@@ -62,6 +62,10 @@ console.log(diet);
 // You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend.  
 
 dietCopy = diet.map((x) => x);
+const newDiet = [...diet]; // god løsning spread opperator 
+
+const dinnerTray = Array.from(diet); //god løsning (bedst)
+const dinnerTray1 = diet.slice(); 
 
 console.log(dietCopy);
 
@@ -72,7 +76,7 @@ const lettersExpanded = ["a","b","c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
 
-for(i = 1; i<lettersExpanded.length; i++){
+for(let i = 1; i<lettersExpanded.length; i+=2){
     console.log(lettersExpanded[i])
 }
 
@@ -87,14 +91,17 @@ const discardedNumbers = [];
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
 for(i = 0; i<numbers.length; i++){
-    if(numbers[i] < 0 || numbers[i]> 6 )
-    console.log(numbers[i]);
-else{
-discardedNumbers.push([i]);
-}}
+    if (numbers[i] < 0 || numbers[i] > 6)
+        console.log(numbers[i]);
+    else {
+        discardedNumbers.push(numbers[i]);
+}
+}
 
 
 console.log(discardedNumbers);
+
+//use eslint airbnb and prettier
 
 
 // --------------------------------------
