@@ -1,0 +1,10 @@
+Maven
+pom.xml              package.json (npm or yarn)
+
+Meta Information => Meta Information
+Define dependencies => Define dependencies
+build-steps => Scripts
+
+
+
+
