@@ -8,3 +8,9 @@ build-steps => Scripts
 
 
 
+{partvariable}
+querystring
+
+
+
+app.get('')
