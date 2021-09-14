@@ -13,7 +13,7 @@ let employees = [{ id: 1, name: 'Bon Hanson' },
   { id: 6, name: 'Luigi Allen' }];
 
 // for creating employee id
-let id = employees.length;
+const id = employees.length;
 
 // get all employee
 
@@ -50,7 +50,7 @@ app.get('/getEmpById/:id', (req, res) => {
 
 app.post('/createEmp', (req, res) => {
   const employee = req.body;
-  employee.id = ++id;
+  employee.id += id;
   employees.push(employee);
   res.send({
     data: employee,
@@ -92,3 +92,5 @@ app.listen(9090, (error) => {
   }
   console.log('server is running on port', 9090);
 });
+
+// eslint --init

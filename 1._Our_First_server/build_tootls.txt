@@ -14,3 +14,7 @@ querystring
 
 
 app.get('')
+
+swagger 
+
+lave en route der skriver ugedagen
