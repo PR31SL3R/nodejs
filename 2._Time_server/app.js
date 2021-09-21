@@ -28,6 +28,7 @@ app.get('/time', (req, res) => {
 app.get('/day', (req, res) => {
   const date = new Date();
   const currentWeekday = weekday[date.getUTCDay()];
+  // return res.send({ day: new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(date) });
   res.send({ currentWeekday });
 });
 
