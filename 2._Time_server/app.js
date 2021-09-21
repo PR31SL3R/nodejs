@@ -8,7 +8,7 @@ app.use(express.json());
 // moment js tider god side til side ting
 
 // nodemon er devolpment specific buildtool
-const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednsday', 'Thursday', 'Friday', 'Saturday'];
+// const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednsday', 'Thursday', 'Friday', 'Saturday'];
 
 const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -26,8 +26,9 @@ app.get('/time', (req, res) => {
 });
 
 app.get('/day', (req, res) => {
-  const date = new Date();
-  const currentWeekday = weekday[date.getUTCDay()];
+  // const date = new Date();
+  // const currentWeekday = weekday[date.getUTCDay()];
+  const currentWeekday = new Date().toLocaleDateString('da-DK', { weekday: 'long' });
   // return res.send({ day: new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(date) });
   res.send({ currentWeekday });
 });

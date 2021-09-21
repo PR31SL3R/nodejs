@@ -2,7 +2,7 @@ const express = require('express'); // imports and saves variable
 
 const app = express(); // instantiates server
 // json body
-app.use(express.json());
+app.use(express.json()); // parse body som json
 
 // mock database
 let employees = [{ id: 1, name: 'Bon Hanson' },
@@ -26,6 +26,8 @@ app.get('/getadventure', (req, res) => {
 });
 
 
+
+
 const cake = require("./cake.json");
 console.log(cake)
 // http://localhost:9090/favoriteNumber?number=1
@@ -46,7 +48,7 @@ app.get("/frontpage", (req, res) => {
  });
 
 // get employee by id
-
+//dsfsf 
 app.get('/getEmpById/:id', (req, res) => {
   const empId = Number(req.params.id);
   const respondEmp = employees.find((employee) => employee.id === empId);
@@ -54,6 +56,15 @@ app.get('/getEmpById/:id', (req, res) => {
 });
 
 // create employee
+
+// pure || matiral ui // hosting heruko sso
+
+app.post('/messages', (req,res) => {
+  console.log(req.body) // request
+
+  res.send({});
+
+});
 
 app.post('/createEmp', (req, res) => {
   const employee = req.body;

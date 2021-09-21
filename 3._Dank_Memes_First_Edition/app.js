@@ -1,6 +1,7 @@
 const express = require('express');
 
 const app = express();
+app.use(express.json());
 
 // Mock database
 const dankestOfMemes = [
@@ -35,6 +36,10 @@ const dankestOfMemes = [
     id: 10, name: 'Meme10', url: 'https://www.reddit.com/r/dankmemes/comments/kjbdbb/why_must_you_hurt_me_in_this_way/', tag: 'Dank',
   }];
 
+// for creating id's
+let memeIdCreator = dankestOfMemes.length;
+console.log(memeIdCreator);
+
 app.get('/dankmemes', (req, res) => {
   res.send({ dankestOfMemes });
 });
@@ -46,6 +51,14 @@ app.get('/dankmemes/:id', (req, res) => {
   res.send({ retrievedMeme });
 });
 
+app.post('/dankmemes', (req, res) => {
+  const dankMeme = req.body;
+  // eslint-disable-next-line no-plusplus
+  dankMeme.id = ++memeIdCreator;
+  dankestOfMemes.push(dankMeme);
+  res.send({ data: dankMeme });
+});
+
 app.listen(8080, (error) => {
   if (error) {
     // eslint-disable-next-line no-console
@@ -53,4 +66,33 @@ app.listen(8080, (error) => {
   }
   // eslint-disable-next-line no-console
   console.log('the server is running on port', 8080);
+});
+
+// delete employee -
+app.delete('/deleteEmp/:id', (req, res) => {
+  const empId = Number(req.params.id);
+  const respondEmp = employees.find((employee) => employee.id === empId);
+
+  employees = employees.filter((employee) => employee.id !== Number(req.params.id));
+  res.send(`deleted following employee${{
+    data: respondEmp,
+  }}`);
+});
+// partial update
+app.patch('/updateEmp/:id', (req, res) => {
+  let empUpdated = false;
+  employees = employees.map((employee) => {
+    if (employee.id === Number(req.params.id)) {
+      empUpdated = true;
+      return {
+        ...employee,
+        ...req.body,
+        id: employee.id,
+      };
+    }
+    return employee;
+  });
+  res.send({
+    empUpdated,
+  });
 });
