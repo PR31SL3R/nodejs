@@ -1,3 +1,4 @@
+const e = require('express');
 const express = require('express');
 
 const app = express();
@@ -46,4 +47,11 @@ app.get('/dankmemes/:id', (req, res) => {
   res.send({ retrievedMeme });
 });
 
-app.listen(8080);
+app.listen(8080, (error) => {
+  if (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  }
+  // eslint-disable-next-line no-console
+  console.log('the server is running on port', 8080);
+});
