@@ -38,7 +38,6 @@ const dankestOfMemes = [
 
 // for creating id's
 let memeIdCreator = dankestOfMemes.length;
-console.log(memeIdCreator);
 
 app.get('/dankmemes', (req, res) => {
   res.send({ dankestOfMemes });
@@ -66,33 +65,4 @@ app.listen(8080, (error) => {
   }
   // eslint-disable-next-line no-console
   console.log('the server is running on port', 8080);
-});
-
-// delete employee -
-app.delete('/deleteEmp/:id', (req, res) => {
-  const empId = Number(req.params.id);
-  const respondEmp = employees.find((employee) => employee.id === empId);
-
-  employees = employees.filter((employee) => employee.id !== Number(req.params.id));
-  res.send(`deleted following employee${{
-    data: respondEmp,
-  }}`);
-});
-// partial update
-app.patch('/updateEmp/:id', (req, res) => {
-  let empUpdated = false;
-  employees = employees.map((employee) => {
-    if (employee.id === Number(req.params.id)) {
-      empUpdated = true;
-      return {
-        ...employee,
-        ...req.body,
-        id: employee.id,
-      };
-    }
-    return employee;
-  });
-  res.send({
-    empUpdated,
-  });
 });
