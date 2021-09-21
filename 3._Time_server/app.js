@@ -1,32 +1,16 @@
 /* eslint-disable no-console */
-const express = require('express'); // imports and saves variable
+const express = require('express'); // imports and saves variable libary
 
 const app = express(); // instantiates server
 // json body
 app.use(express.json());
 
-const weekday = [];
-weekday[0] = 'Sunday';
-weekday[1] = 'Monday';
-weekday[2] = 'Tuesday';
-weekday[3] = 'Wednsday';
-weekday[4] = 'Thursday';
-weekday[5] = 'Friday';
-weekday[6] = 'Saturday';
+// moment js tider god side til side ting
 
-const month = [];
-month[0] = 'January';
-month[1] = 'February';
-month[2] = 'March';
-month[3] = 'April';
-month[4] = 'May';
-month[5] = 'June';
-month[6] = 'July';
-month[7] = 'August';
-month[8] = 'September';
-month[9] = 'October';
-month[10] = 'November';
-month[11] = 'December';
+// nodemon er devolpment specific buildtool
+const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednsday', 'Thursday', 'Friday', 'Saturday'];
+
+const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 app.get('/', (req, res) => {
   res.send({});

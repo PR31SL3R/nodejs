@@ -25,6 +25,9 @@ app.get('/getadventure', (req, res) => {
   res.send({ adventureType: 'fun' });
 });
 
+
+const cake = require("./cake.json");
+console.log(cake)
 // http://localhost:9090/favoriteNumber?number=1
 
 app.get('/senddata', (req, res) => {
@@ -37,6 +40,10 @@ app.get('/senddata', (req, res) => {
 app.get('/favoriteNumber/:number', (req, res) => {
   res.send({ number: req.params.number });
 });
+
+app.get("/frontpage", (req, res) => {
+  res.send("Welcome to your application");
+ });
 
 // get employee by id
 
