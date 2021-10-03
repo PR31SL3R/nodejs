@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // Mock database
-const dankestOfMemes = [
+let dankestOfMemes = [
   {
     id: 1, name: 'Meme1', url: 'https://preview.redd.it/yx0lur8puvn51.gif?format=mp4&s=0c4543db4183f8f2e057a7d296923c1e9b9ccb1b', tag: 'Dank',
   },
@@ -55,7 +55,49 @@ app.post('/dankmemes', (req, res) => {
   // eslint-disable-next-line no-plusplus
   dankMeme.id = ++memeIdCreator;
   dankestOfMemes.push(dankMeme);
-  res.send({ data: dankMeme });
+  res.send(`created following Meme${{
+    data: dankMeme,
+  }}`);
+});
+
+// put
+app.put('/dankmemes/:id', (req, res) => {
+  const dankMeme = req.body;
+  dankMeme.id = Number(req.params.id);
+  // eslint-disable-next-line no-shadow
+  dankestOfMemes = dankestOfMemes.filter((dankMeme) => dankMeme.id !== Number(req.params.id));
+  dankestOfMemes.push(dankMeme);
+  res.send({ dankMeme });
+});
+
+// partial update
+app.patch('/dankmemes/:id', (req, res) => {
+  let memeUpdated = false;
+  dankestOfMemes = dankestOfMemes.map((dankMeme) => {
+    if (dankMeme.id === Number(req.params.id)) {
+      memeUpdated = true;
+      return {
+        ...dankMeme,
+        ...req.body,
+        id: dankMeme.id,
+      };
+    }
+    return dankMeme;
+  });
+  res.send({
+    memeUpdated,
+  });
+});
+
+// delete Meme -
+app.delete('/dankmemes/:id', (req, res) => {
+  const memeId = Number(req.params.id);
+  const respondMeme = dankestOfMemes.find((dankMeme) => dankMeme.id === memeId);
+
+  dankestOfMemes = dankestOfMemes.filter((dankMeme) => dankMeme.id !== Number(req.params.id));
+  res.send(`deleted following Meme${{
+    data: respondMeme,
+  }}`);
 });
 
 app.listen(8080, (error) => {
