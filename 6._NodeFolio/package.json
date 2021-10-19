@@ -1,0 +1,11 @@
+{
+  "name": "6._nodefolio",
+  "version": "1.0.0",
+  "description": "nodefolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jesper preisler",
+  "license": "ISC"
+}

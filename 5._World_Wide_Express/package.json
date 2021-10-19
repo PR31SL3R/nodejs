@@ -14,13 +14,5 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2"
-  },
-  "name": "5._world_wide_express",
-  "version": "1.0.0",
-  "main": "app.js",
-  "type": "module",
-  "module": "commonjs",
-  "author": "jp",
-  "license": "ISC",
-  "description": ""
+  }
 }
