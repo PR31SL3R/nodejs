@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Week3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./week.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./week.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index/index.html">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index/index.html">Home</a></li>
+        <li><a href="/funny">Contact</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <h3>Week 3</h3>
+      </div>
+      <div class="well">
+        <p><a href="#">BuzzWords</a></p>
+        <p>
+          <span class="label label-default">NPM</span>
+          <span class="label label-primary">Express</span>
+          <span class="label label-success">nodemon</span>
+          <span class="label label-info">Strictmode</span>
+          <span class="label label-warning">Scopes</span>
+          <span class="label label-danger">Variables</span>
+        </p>
+      </div>
+      <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Ey!</strong></p>
+        Resources for more learning
+      </div>
+      <p><a href="https://nodejs.dev">nodejs.dev</a></p>
+      <p><a href="https://en.wikipedia.org/wiki/Node.js">Wiki</a></p>
+      <p><a href="https://www.cloudbees.com/blog/node-js-tutorial/">Beginners Guide</a></p>
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <p contenteditable="true">Status: On....</p>
+              <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>     
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Create express app <br>
+            app.js
+            package.json
+           </p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>const express = require("express");
+              const app = express();
+              app.use(express.static('public'))
+              //keep on bottom - starts the server
+            app.listen(9090, (error) => {
+                  if (error) {
+                  console.log(error)
+                        }
+            console.log("server is running on port", 9090)
+                      });
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Time</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>
+              let dateObj = new Date();
+              const seconds = dateObj.getSeconds();
+              const minutes = dateObj.getMinutes();
+              const hours = dateObj.getHours(); 
+              
+              const time = (hours+":"+minutes+":"+seconds)
+          
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>strict mode</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>function strict() {
+              'use strict';
+              function nested() { return 'And so am I!'; }
+              return "Hi!  I'm a strict mode function!  " + nested();
+            }
+            function notStrict() { return "I'm not strict."; }
+              
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+            <p>type coercion
+            <p><a href="/week2">
+              <button>Previous Week</button>
+            </a></p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Type coercion is the process of converting value from one type to another (such as string to number, object to boolean, and so on). Any type, be it primitive or an object, is a valid subject for type coercion
+            
+            
+            </p>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>Ultimate BrainPower!</p>
+        <img src="/images/brainpower.jpg" alt="Paris" width="400" height="300">
+        <p><strong>København</strong></p>
+        <p>2021</p>
+        <button class="btn btn-primary" disabled>coming soon!</button>
+      </div>      
+      <div class="well">
+        <p>One man’s crappy software is another man’s full-time job</p>
+      </div>
+      <div class="well">
+        <p><a href="/week4">
+          <button>next week</button>
+        </a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>I have no clue...</p>
+</footer>
+
+</body>
+</html>
+

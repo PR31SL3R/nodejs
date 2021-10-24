@@ -1,0 +1,16 @@
+  .jumbotron {
+    background-image: url("/images/nodemongreen.jpg");
+    object-fit: cover; }
+
+    .img-responsive{
+    object-fit: cover;
+    }
+
+
+ 
+
+.cropimg {
+    width: 150;
+    height: 80;
+
+}

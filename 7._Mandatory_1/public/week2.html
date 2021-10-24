@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Week2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./week.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./week.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index/index.html">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index/index.html">Home</a></li>
+        <li><a href="/funny">Contact</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <h3>Week 2</h3>
+      </div>
+      <div class="well">
+        <p><a href="#">BuzzWords</a></p>
+        <p>
+          <span class="label label-default">Callback</span>
+          <span class="label label-primary">Http</span>
+          <span class="label label-success">REST</span>
+          <span class="label label-info">API</span>
+          <span class="label label-warning">HTTP</span>
+          <span class="label label-danger">Terminal</span>
+        </p>
+      </div>
+      <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Ey!</strong></p>
+        Resources for more learning
+      </div>
+      <p><a href="https://restfulapi.net">nodejs.dev</a></p>
+      <p><a href="https://en.wikipedia.org/wiki/Node.js">Wiki</a></p>
+      <p><a href="https://www.cloudbees.com/blog/node-js-tutorial/">Beginners Guide</a></p>
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <p contenteditable="true">Status: sleepy....</p>
+              <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>     
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Callback Functions
+            A callback is a function passed as an argument to another function.
+           </p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>function myCalculator(num1, num2, myCallback) {
+              let sum = num1 + num2;
+              myCallback(sum);
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>
+             RESTful meaning;
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>REpresentational State Transfer. It is architectural style for distributed hypermedia systems
+              Client–server(separating the user interface concerns from the data storage concerns),Stateless(request provide all information),
+              Cacheable,Uniform interface,Layered system
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>GET impementation</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>var myData = []; 
+              //get employee by id
+            app.get("/getEmpById/:id", (req, res) => {
+          const empId = Number(req.params.id);
+        const respondEmp = employees.find(employee => employee.id === empId);
+
+              res.send({
+            respondEmp
+            });
+              
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+            <p>Functions
+              Primitive or Non-Primitive?
+            </p>
+            <p><a href="/week1">
+              <button>Previous Week</button>
+            </a></p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>var val; // contains either primitive or non-primitive value <br>
+              function isPrimitive(val) {
+                return Object(val) !== val;
+            }
+            </p>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>Ultimate BrainPower!</p>
+        <img src="/images/brainpower.jpg" alt="Paris" width="400" height="300">
+        <p><strong>København</strong></p>
+        <p>2021</p>
+        <button class="btn btn-primary" disabled>coming soon!</button>
+      </div>      
+      <div class="well">
+        <p>It’s not a bug – it’s an undocumented feature.</p>
+      </div>
+      <div class="well">
+        <p><a href="/week3">
+          <button>next week</button>
+        </a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>I have no clue...</p>
+</footer>
+
+</body>
+</html>
+

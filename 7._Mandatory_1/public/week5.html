@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Week5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./week.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./week.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index/index.html">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index/index.html">Home</a></li>
+        <li><a href="/funny">Contact</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <h3>Week 5</h3>
+      </div>
+      <div class="well">
+        <p><a href="#">BuzzWords</a></p>
+        <p>
+          <span class="label label-default">HTML</span>
+          <span class="label label-primary">Mapping</span>
+          <span class="label label-success">Paths</span>
+          <span class="label label-info">Serve</span>
+          <span class="label label-warning">Express</span>
+          <span class="label label-danger">Endpoints</span>
+        </p>
+      </div>
+      <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Ey!</strong></p>
+        Resources for more learning
+      </div>
+      <p><a href="https://nodejs.dev">nodejs.dev</a></p>
+      <p><a href="https://flexboxfroggy.com/">Froggy</a></p>
+      <p><a href="http://cssgridgarden.com/">GridGarden</a></p>
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <p contenteditable="true">Status: Damn....</p>
+              <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>     
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Serving html with express</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>
+              app.get("/pizza", (req, res) => {
+                res.sendFile(__dirname + "/public/pizzaparlor.html");
+            });
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Params <br>
+            queries
+           </p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>app.get("/pub", (req, res) => {
+              if (Number(req.query.money) > 500) {
+                  res.redirect("/whiskey");
+              } else {
+                  res.send({ doorman: "Sorry, you don't have money for whiskey." });
+              }
+          });
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>
+             Endpoints</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Simply put, an endpoint is one end of a communication channel. When an API interacts with another system, the touchpoints of this communication are considered endpoints. For APIs, an endpoint can include a URL of a server or service
+              
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+            <p>response body</p>
+            <p><a href="/week4">
+              <button>Previous Week</button>
+            </a></p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>app.post("/createEmp", (req, res) => {
+              const employee = req.body;
+              employee.id = ++id;
+              employees.push(employee);
+              res.send({
+                  data: employee
+              });
+            </p>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>Ultimate BrainPower!</p>
+        <img src="/images/brainpower.jpg" alt="Paris" width="400" height="300">
+        <p><strong>København</strong></p>
+        <p>2021</p>
+        <button class="btn btn-primary" disabled>coming soon!</button>
+      </div>      
+      <div class="well">
+        <p>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.</p>
+      </div>
+      <div class="well">
+        <p><a href="/week6">
+          <button>next week</button>
+        </a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>I have no clue...</p>
+</footer>
+
+</body>
+</html>
+
