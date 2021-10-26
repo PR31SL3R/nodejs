@@ -1,20 +1,30 @@
 {
-  "name": "6._nodefolio",
-  "version": "1.0.0",
-  "description": "nodefolio",
+  "name": "nodefolio",
+  "version": "0.0.1",
+  "description": "A personal portfolio made in Node.js.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jesper preisler",
-  "license": "ISC",
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.25.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderslatif/Kea_DAT_Node_2021_AUTUMN.git"
   },
+  "keywords": [
+    "portfolio",
+    "Node.js",
+    "HTML"
+  ],
+  "author": "Anders",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anderslatif/Kea_DAT_Node_2021_AUTUMN/issues"
+  },
+  "homepage": "https://github.com/anderslatif/Kea_DAT_Node_2021_AUTUMN#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
