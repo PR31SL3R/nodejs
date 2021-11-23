@@ -12,7 +12,6 @@ router.get("/api/projects", (req, res) => {
 });
 
 
-
 module.exports = {
     router
 };
