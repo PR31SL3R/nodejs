@@ -6,12 +6,15 @@ import { connection } from "./connectDB.js";
     const dbConnection = await connectSqlite();
     console.log(dbConnection);
 
-    const gamesTableSchema = `
-    CREATE TABLE GAMES (
+    const messagesTableSchema = `
+    CREATE TABLE Messages (
         id INTEGER PRIMARY KEY,
-           title TEXT NOT NULL )`;
+           name TEXT NOT NULL
+           email TEXT NOT NULL
+           subject TEXT NOT NULL
+           message TEXT NOT NULL )`;
 
-            connection.exec(gamesTableSchema);
+            connection.exec(messagesTableSchema);
         
 
 })();
