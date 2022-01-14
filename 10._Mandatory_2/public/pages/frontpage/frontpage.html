@@ -1,239 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
-  </style>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#me">WHO</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#what">WHAT</a></li>
-        <li><a href="#where">WHERE</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="me">
-  <h3 class="margin">Hvem er jeg</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>Introduktion</h3>
-  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-</div>
-<!-- First Container -->
-<div class="container-fluid bg-4 text-center" id="cv">
-  <h3 class="margin">Hvem er jeg</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>Introduktion</h3>
-  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-</div>
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center" id="what">    
-  <h3 class="margin">Projects</h3><br>
-  <div class="row">
+    <h3 class="margin">who am i?</h3>
+    <img src="../assets/1.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+    <h3>Casual introduction</h3>
+    <h1>This is me!</h1>
+  </div>
+  <!-- First Container -->
+  <div class="container-fluid bg-4 text-center" id="cv">
+    <h3 class="margin">Formel introduktion</h3>
+    <div class="row">
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>Imagine a serious text here</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-4">
+    <figure>
+      <a href="../assets/cv.pdf" download>
+        <img src="../assets/cv.jpg" alt="My picture" class="img-responsive img-circle margin" style="display:inline" width="350" height="350">>
+      </a>
+      <figcaption>
+        Click photo to download resume!
+      </figcaption>
+    
     </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-4">
+      <h3>And here!</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
   </div>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center" id="where">
-  <!--Section description-->
-
-  <div class="row">
-
-      <!--Grid column-->
-      <div class="container">
-        <div class="row">
-            <!-- Section Titile -->
-            <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-                <h1 class="section-title">Contact Me</h1>
-            </div>
-        </div>
-        <div class="row">
-            <!-- Section Titile -->
-            <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
-              <p style="padding-top: 30px;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content.</p>
-
-              <div class="find-widget">
-               Company:  <a href="https://hostriver.ro">HostRiver</a>
+  </div>
+  <!-- Third Container (Grid) -->
+  <div class="container-fluid bg-2 text-center" id="what">    
+    <h3 class="margin">Projects</h3><br>
+    <div class="row" id="projects-wrapper"></div>
+      <!-- <div class="col-sm-4" id="projects-wrapper"></div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Second Container -->
+  <div class="container-fluid bg-3 text-center" id="where">
+    <!--Section description-->
+    <div class="row">
+        <!--Grid column-->
+        <div class="container">
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <h1 class="section-title">Contact Me</h1>
               </div>
-              <div class="find-widget">
-               Address: <a href="#">4435 Berkshire Circle Knoxville</a>
+          </div>
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <p style="padding-top: 30px;">Feel free to contact me, and i'll be in touch as as possible</p>
+                    <div class="find-widget">
+                  Address:  <a href="https://www.google.com/maps/place/San+Quentin+State+Prison/@37.9381241,-122.4923863,16z">Address: 742 Evergreen Terrace</a>
+                </div>
+                <div class="find-widget">
+                  Phone:  <a href="https://procatinator.com">12345678</a>
+                </div>
+                <img src="../assets/3.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Dog" width="350" height="350">
               </div>
-              <div class="find-widget">
-                Phone:  <a href="#">+ 879-890-9767</a>
-              </div>
-              
-              <div class="find-widget">
-                Website:  <a href="https://uny.ro">www.uny.ro</a>
-              </div>
-              <div class="find-widget">
-                 Program: <a href="#">Mon to Sat: 09:30 AM - 10.30 PM</a>
-              </div>
-            </div>
-            <!-- contact form -->
-            <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
-                <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-                    <!-- Name -->
-                    <div class="form-group label-floating">
-                      <label class="control-label" for="name">Name</label>
-                      <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- email -->
-                    <div class="form-group label-floating">
-                      <label class="control-label" for="email">Email</label>
-                      <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- Subject -->
-                    <div class="form-group label-floating">
-                      <label class="control-label">Subject</label>
-                      <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- Message -->
-                    <div class="form-group label-floating">
-                        <label for="message" class="control-label">Message</label>
-                        <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+              <!-- contact form -->
+              <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Name -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
                         <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- Form Submit -->
-                    <div class="form-submit mt-5">
-                      <a class="btn btn-primary">Send</a>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        <div class="clearfix"></div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="text" name="email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group label-floating">
+                        <label class="control-label">Subject</label>
+                        <input class="form-control" id="subject" type="text" name="subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label">Message</label>
+                          <textarea class="form-control" rows="3" type="text" id="message" name="message" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit mt-5">
+                        <button type="button" class="btn btn-primary" onclick="myFunction()">Contact Me</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
 
-  </div>
-  <h3 class="margin">Contact Me</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <button type="button" class="btn btn-primary" onclick="myFunction()">Contact Me</button>
-    <p id="demo"></p>
-  </a>
-</div>
-
-
-
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
-</footer>
-
-<script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-  
-     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-  
-      // Prevent default anchor click behavior
-      event.preventDefault();
-  
-      // Store hash
-      var hash = this.hash;
-  
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-  
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-        });
-      } // End if
-    });
-  })
-  function myFunction() {
-  let text;
-  let message = prompt("Please enter your name:", "Harry Potter");
-  if (message == null || message == "") {
-    text = "User cancelled the prompt.";
-  } else {
-    text = "Hello " + message + "! How are you today?";
-  }
-  document.getElementById("demo").innerHTML = text;
-}
-  </script>
-</body>
-</html>
-
+<script src="./pages/frontpage/frontpage.js"></script>
